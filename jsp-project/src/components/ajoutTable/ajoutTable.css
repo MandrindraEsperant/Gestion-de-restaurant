@@ -1,0 +1,44 @@
+:root {
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #2c2a2a;
+}
+.formAjoutTable{
+    color: #e9f1f1;
+    font-size: 13.5px;
+}
+.formAjoutTable .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.formAjoutTable form{
+    padding: 10px 20px;
+}
+.formAjoutTable form .rows{
+    margin-bottom: 11px;
+}
+.formAjoutTable form label{
+    display: block;
+}
+.formAjoutTable form input{
+
+    width: 220px;
+    outline: none;
+    border: 1px solid var(--gray) ;
+    background-color: rgb(75, 72, 72);
+    padding: 3px 10px;
+    color: white;
+    font-weight: 400;
+    border-radius:4px;
+}
+.formAjoutTable form button{
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+}
+    

@@ -1,0 +1,104 @@
+:root {
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #2c2a2a;
+}
+.Container-listeCmd {
+    padding: 5px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.Container-listeCmd .tableCmd {
+    width: 100%;
+}
+.Container-listeCmd .tableCmd .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Container-listeCmd .tableCmd .action .trash{
+    box-shadow: 1px 1px 5px rgb(31, 29, 29);
+}
+.Container-listeCmd h1{
+    font-size: 23px;
+}
+.Container-listeCmd .tableCmd tr{
+    text-align: left;
+    border-radius: 12%;
+}
+.Container-listeCmd .tableCmd td{  
+    background-color: #364655af;
+}
+.Container-listeCmd .tableCmd th {
+    color: var(--gray);
+    padding: 8px;
+    font-weight: 500;
+}
+.Container-listeCmd .tableCmd  td{
+    padding: 10px;
+    color: #F5F5F5;
+}
+.Container-listeCmd .tableCmd p{
+    margin: 7px;
+}
+.Container-listeCmd .tableContainer {
+    border-left: 1px solid var(--gray) ;
+    padding: 7px 10px;
+}
+
+.searchCmd{
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    /* display: flex;
+    justify-content: center; */
+    padding: 5px;
+    /* grid-column-gap: 7px; */
+    background-color: rgb(55, 56, 56);
+ 
+}
+.searchCmd input{
+   width: 95%;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   border-bottom: 1px solid var(--gray);
+   color: var(--gray);
+
+}
+
+
+.wrapperListCmd{
+    display: flex;
+    align-items: baseline; 
+    gap: 15px; 
+    padding: 10px; 
+    border-radius: 5px;
+}
+.wrapperListCmd .Container-listeCmd{
+    padding: 4px;
+    box-shadow: 1px 1px 5px var(--gray);
+}
+
+
+.zimmer{
+    max-height: 68vh;
+    background-color: var(--black1);
+    overflow: auto;
+      
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+        height: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+       background-color: #dde2e9;
+       border-radius: 6px;
+       visibility: hidden;
+    }
+    &::-webkit-scrollbar-thumb{
+        visibility: visible;
+    }
+}

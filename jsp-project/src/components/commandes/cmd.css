@@ -1,0 +1,419 @@
+:root {
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #2c2a2a;
+}
+.table.commande{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1.1fr;
+    grid-gap: 5px;
+}
+.table .headTalbe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table .headTalbe h1 {
+    font-size: 27px;
+    color: var(--white);
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 19rem;
+        height: 0.2rem;
+        background-color: #1B2330;
+        border-radius: 0.5rem;
+    }
+}
+
+.table .headTalbe h1 {
+    font-weight: 800;
+    position: relative;
+    font-size: 20px;
+    color: var(--black1);
+}
+.table .headTalbe button{
+    border-radius: 0.1rem;
+}
+.table .Container-cardTable{
+    margin-top: 4px;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow-y: auto;
+    max-height: 75vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(265px , 1fr));
+    gap:1.5rem;
+  
+}
+.Container-cardTable::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.Container-cardTable::-webkit-scrollbar-thumb{
+   background-color: #1B2330;
+   border-radius: 1rem;
+   visibility: hidden;
+}
+.Container-cardTable:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.table .Container-cardTable >div{
+    box-shadow: 1px 1px 20px var(--black1);
+    padding: 12px;
+    width: auto;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+
+.table .createTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 10rem;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 3px dashed ;
+    font-weight: 600;
+    color: var(--gray);
+    &:hover{
+        background-color: var(--gray);
+        color: var(--black);
+        border:1px dashed #222222b6;
+    }
+}
+
+.table .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .table .tab{
+    --tw-bg-opacity: 1;
+    /* background: linear-gradient(to right,  rgb(71 85 105 / var(--tw-bg-opacity))20%, transparent), url('../image/Group2.png'); */
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    height: 100px;
+    position: relative;
+    margin-bottom: .7rem;
+}
+.table .date{
+   position: absolute;
+   bottom: 0.24rem;
+
+
+   &::after{
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    width: 5rem;
+    height: 0.16rem;
+    background-color: #222222c7;
+    border-radius: 0.5rem;
+}
+}
+
+.table .tab div:last-child.tables{
+   background-image: url('../image/tab1.jpg') ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: none;
+}
+.table .tab div:last-child.plat{
+   background-image: url('../image/plat.jpg') ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: none;
+}
+.table select{
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.table select option{
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+/* =========== here is the css of the commande section =========// */
+.commandeSection{
+    border: 1px solid var(--black);
+    margin-left: 4px;
+    padding: 10px;
+    border-radius: 7px;
+    height: 81vh;
+}
+
+.commandeSection .head{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -0.2rem;
+        left: 0;
+        width: 100%;
+        height: 0.2rem;
+        background-color: #f1f1f7d7;
+        border-radius: 0.5rem;
+    }
+}
+
+.commandeSection .head h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fdfeff;
+}
+.commandeSection .form label{
+  color: var(--white);
+  font-size: 14px;
+  display: block;
+}
+.commandeSection .form{
+    box-shadow: 1px 1px 20px var(--black1);
+    padding: 10px;
+}
+.commandeSection .form select option{
+    font-size: 12px;
+    font-weight: 400;
+}
+.commandeSection .form input,.commandeSection form select{
+    outline: none;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 2.5px 10px;
+    background-color: #364655af;
+    border: 1px solid var(--gray);
+    color: var(--white);
+}
+.commandeSection form select{
+    width: 90%;
+    margin-left: 0px;
+}
+.commandeSection form input{
+    width: 100%;
+}
+.commandeSection form input.quantite{
+    width: 50%;
+}
+.commandeSection form .addQuantite{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.commandeSection form .addQuantite .ico{
+    font-size: 16px; 
+    color: var(--gray);
+}
+.commandeSection form .addQuantite button span{
+    font-size: 13px; 
+    margin-left: 3px;
+}
+.commandeSection form .addQuantite button{
+   padding: 3px 6px;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--gray);
+   border-radius: 6px;
+   background-color: var(--black1);
+}
+
+.commandeSection .form .rows{
+    margin-bottom: 6px;
+    
+}
+.aboutMenuCmd{
+    position: relative;
+    padding: 10px;
+    box-shadow: 1px 1px 20px var(--black1);
+}
+.tableMenuCmd{
+    height: 15vh;
+    overflow: auto;
+    position: relative;
+}
+.tableMenuCmd::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.tableMenuCmd::-webkit-scrollbar-thumb{
+   background-color: #1B2330;
+   visibility: hidden;
+}
+.tableMenuCmd:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+.aboutMenuCmd table th{
+    font-weight: 400px;
+    text-align: left;
+    padding :2px 10px;
+    z-index: 200;
+}
+.aboutMenuCmd table >tr{
+    z-index: 999;
+}
+.aboutMenuCmd p{
+    margin: 4px;
+}
+.aboutMenuCmd table tr td{
+    position: relative;
+    padding:2px 10px;
+    z-index: 1;
+        background-color: #364655af;
+        color: var(--gray);
+
+}
+
+/* style of the ajout part */
+
+.formAjoutTable{
+    color: #e9f1f1;
+    font-size: 13.5px;
+}
+.formAjoutTable .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.formAjoutTable form{
+    padding: 10px 20px;
+}
+.formAjoutTable form .rows{
+    margin-bottom: 11px;
+}
+
+
+.formAjoutTable form label{
+    display: block;
+}
+.formAjoutTable form input{
+    width: 220px;
+    outline: none;
+    border: 1px solid var(--gray) ;
+    background-color: rgb(75, 72, 72);
+    padding: 3px 10px;
+    color: white;
+    font-weight: 400;
+    border-radius:4px;
+}
+.formAjoutTable form button{
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+}
+
+
+.action button .icone{
+    margin-bottom: -3.5px;
+    font-size: 19px;
+}
+
+
+
+/* ====== pagination table ========= */
+nav ul.pagination {
+    border-top: 2px solid var(--black);
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px;
+}
+
+nav ul.pagination li a,nav ul.pagination li span{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 450;
+    cursor: pointer;
+}
+nav ul.pagination li.active{
+    background-color: var(--black1);
+    border-radius: 0px;
+    color: var(--white);
+    border: 1px solid var(--black1);
+}
+nav ul.pagination .page-item{
+    border: 1px solid var(--black);
+    padding:4px 12px;
+    list-style: none;
+    font-size: 18px;
+    color: var(--black);
+    cursor: pointer;
+}
+nav ul.pagination .btnpn:last-child{
+    margin-left:10px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+    color: var(--gray);
+}
+nav ul.pagination .btnpn:first-child{
+    margin-right:10px ;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+    color: var(--gray);
+}
+
+/* **************************************************   PDF   ****************************************************** */
+
+.containerPdf {
+    color: #223;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #233;
+    padding-bottom: 10px;
+    background: #fff;
+}
+.containerPdf .pdf {
+    padding: 20px;
+    margin-left: 10px;
+   
+}
+.containerPdf .pdf h1{
+    font-weight: 600;
+}
+.containerPdf .pdf .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerPdf .pdf > div {
+    margin-bottom: 20px;
+}
+
+.containerPdf .pdf table{
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+.pdf th, .pdf td, .pdf tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.btnPdf{
+    padding:5px 20px;
+    margin-left: 20px;
+}

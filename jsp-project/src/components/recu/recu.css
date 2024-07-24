@@ -1,0 +1,37 @@
+.containerPdf {
+    color: #223;
+    width: 60%;
+    margin: auto;
+    border: 1px solid #233;
+    padding-bottom: 10px;
+}
+.containerPdf .pdf {
+    padding: 20px;
+    margin-left: 10px;
+   
+}
+.containerPdf .pdf h1{
+    font-weight: 600;
+}
+.containerPdf .pdf .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerPdf .pdf > div {
+    margin-bottom: 20px;
+}
+
+.containerPdf .pdf table{
+    margin-top: 10px;
+    width: 100%;
+    text-align: left;
+}
+.pdf th, .pdf td, .pdf tr{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.btnPdf{
+    padding:5px 20px;
+    margin-left: 20px;
+}

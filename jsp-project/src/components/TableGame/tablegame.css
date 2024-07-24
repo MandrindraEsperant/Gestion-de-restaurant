@@ -1,0 +1,91 @@
+table{
+    width: 100%;
+}
+table img{
+    width: 40px;
+}
+th{
+    padding: 10px;
+}
+td{
+    padding: 4px;
+}
+th:first-child, td:first-child{
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+td:last-child ,th:last-child{
+    border-top-right-radius: 14px;
+}
+
+tr{
+    background-color: #364655af;
+    text-align: left;
+    border-radius: 12%;
+}
+table p{
+    margin: 10px;
+}
+tr >th{
+    text-align: left;
+}
+
+table tbody tr td .profile{
+    display: flex;
+    align-items: center;
+    /* justify-content: left; */
+    grid-gap: 10px;
+}
+table tbody tr td .profile .descProfile{
+    line-height: 14px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content:start ;
+}
+table tbody tr td .profile .descProfile h1{
+    margin-top: 7px;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #e5e9ee;
+}
+table tbody tr td .profile .descProfile h4{
+    color: #7f8183;
+    font-size: 14px;
+}
+.profileImage{
+    background-color: #067eee;
+    padding: 3px;
+    border-radius: 50%;
+}
+.action{
+    display: flex;
+}
+.action .i{
+    margin:0 18px;
+}
+.statu a{
+    background-color: royalblue;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+.statu1 a{
+    background-color: rgba(248, 104, 8, 0.925);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+.statu2 a{
+    background-color: rgba(192, 8, 248, 0.925);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+}
+.statu3 a{
+    background-color: rgba(212, 248, 8, 0.651);
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 15px;
+}

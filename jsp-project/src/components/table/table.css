@@ -1,0 +1,383 @@
+:root {
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #2c2a2a;
+}
+.table{
+    width: 100%;
+}
+.table .headTalbe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table .headTalbe h1 {
+    font-size: 20px;
+    color: var(--white);
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -0.5rem;
+        left: 0;
+        width: 19rem;
+        height: 0.2rem;
+        background-color: #1B2330;
+        border-radius: 0.5rem;
+    }
+}
+
+.table .headTalbe h1 {
+    font-weight: 800;
+    position: relative;
+    font-size: 27px;
+    color: var(--black1);
+    display: flex ;
+    align-items: center;
+}
+.table .headTalbe button{
+    border-radius: 0.1rem;
+}
+.table .Container-cardTable{
+    margin-top: 4px;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 0.2rem;
+    overflow-y: auto;
+    max-height: 75vh;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(265px , 1fr));
+    gap:1.5rem;
+  
+}
+.Container-cardTable::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.Container-cardTable::-webkit-scrollbar-thumb{
+   background-color: #1B2330;
+   border-radius: 1rem;
+   visibility: hidden;
+}
+.Container-cardTable:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+.table .Container-cardTable >div{
+    box-shadow: 1px 1px 20px var(--black1);
+    padding: 12px;
+    width: auto;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+
+.table .createTable{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 10rem;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 3px dashed ;
+    font-weight: 600;
+
+    &:hover{
+        background-color: var(--gray);
+        color: var(--black);
+        border:1px dashed #222222b6;
+    }
+}
+
+.table .action{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table .action button .icone{
+    margin-bottom: -3.5px;
+    font-size: 19px;
+}
+ .table .tab{
+    --tw-bg-opacity: 1;
+    /* background: linear-gradient(to right,  rgb(71 85 105 / var(--tw-bg-opacity))20%, transparent), url('../image/Group2.png'); */
+    display: grid;
+    grid-template-columns: 1fr 1.1fr;
+    height: 100px;
+    position: relative;
+    margin-bottom: .7rem;
+}
+.table .date{
+   position: absolute;
+   bottom: 0.24rem;
+
+
+   &::after{
+    content: '';
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0;
+    width: 5rem;
+    height: 0.16rem;
+    background-color: #222222c7;
+    border-radius: 0.5rem;
+}
+}
+
+.table .tab div:last-child.tables{
+   background-image: url('../image/tab1.jpg') ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: none;
+}
+.table .tab div:last-child.plat{
+   background-image: url('../image/plat.jpg') ;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: none;
+}
+.table select{
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+.table select option{
+    border: none;
+    font-size: 22px;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+
+
+/*==== style of the table client =====*/
+
+.Container-tableClient {
+    padding: 5px;
+    width: 100%;
+    display: grid ;
+    grid-template-columns:  1fr 3fr;
+    margin-top: 5px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.Container-tableClient .tableClient {
+    width: 100%;
+}
+
+.Container-tableClient .tableClient tr{
+    text-align: left;
+    border-radius: 12%;
+}
+.Container-tableClient .tableClient td{  
+    background-color: #364655af;
+}
+.Container-tableClient .tableClient th {
+    color: var(--gray);
+    padding: 8px;
+    font-weight: 500;
+}
+.Container-tableClient .tableClient  td{
+    padding: 10px;
+    color: #F5F5F5;
+}
+.Container-tableClient .tableClient p{
+    margin: 7px;
+}
+.Container-tableClient .tableContainer {
+    border-left: 1px solid var(--gray) ;
+    padding: 7px 10px;
+}
+
+.searchClient{
+    padding: 10px;
+}
+.searchClient h1{
+margin-bottom: 6px;
+position: relative;
+    
+}
+.searchClient h2{
+margin-bottom: 9px;
+position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        width: 3rem;
+        height: 0.2rem;
+        background-color: #070707;
+        border-radius: 0.5rem;
+    }
+}
+.searchClient h1::after{
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 9rem;
+    height: 0.2rem;
+    background-color: #070707;
+    border-radius: 0.5rem;
+}
+
+.searchClient .search{
+    display: flex;
+    align-items: center;
+    /* justify-content: end; */
+    /* display: flex;
+    justify-content: center; */
+    padding: 4px;
+    /* grid-column-gap: 7px; */
+    background-color: rgb(55, 56, 56);
+    border-radius: 5px;
+}
+.searchClient .search input{
+   width: 95%;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   border-bottom: 1px solid var(--gray);
+   color: var(--gray);
+
+}
+
+.searchClient  .icone{
+   color: var(--gray);
+}
+.searchClient  .searchDeux input{
+   width: 190px;
+   outline: none;
+   border: none;
+   background-color: transparent;
+   border-bottom: 1px solid var(--gray);
+   color: var(--gray);
+}
+.searchClient  .searchDeux .icone{
+    border: 1px solid var(--black1);
+    margin-left: 17px;
+    padding: 6px;
+    font-size: 30px;
+    border-radius: 2px;
+    margin-top: -4.5px;
+    cursor: pointer;
+}
+.searchClient  .searchDeux {
+    padding-top: 10px;
+}
+
+.searchClient  .searchDeux p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.searchClient .imageContairer{
+    margin-top: 40px;
+    width:100%;
+    background-image: url(../image/client.png);
+    background-position: center;
+    background-size: cover;
+    height: 27vh;
+    border-radius: 5px;
+}
+
+
+/* ====== pagination table ========= */
+nav ul.pagination {
+    border-top: 2px solid var(--black);
+    display: flex;
+    justify-content: end;
+    padding: 5px 10px;
+}
+
+nav ul.pagination li a,nav ul.pagination li span{
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: 450;
+    cursor: pointer;
+}
+nav ul.pagination li.active{
+    background-color: var(--black1);
+    border-radius: 0px;
+    color: var(--white);
+    border: 1px solid var(--black1);
+}
+nav ul.pagination .page-item{
+    border: 1px solid var(--black);
+    padding:4px 12px;
+    list-style: none;
+    font-size: 18px;
+    color: var(--black);
+    cursor: pointer;
+}
+nav ul.pagination .btnpn:last-child{
+    margin-left:10px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+    color: var(--gray);
+}
+nav ul.pagination .btnpn:first-child{
+    margin-right:10px ;
+    --tw-bg-opacity: 1;
+    background-color: rgb(3 7 18 / var(--tw-bg-opacity));
+    color: var(--gray);
+}
+
+
+
+
+
+/* Formulaire pour l'ajout css */
+
+
+:root {
+    --white: #fff;
+    --gray: #F5F5F5;
+    --black1: #222;
+    --black: #2c2a2a;
+}
+.formAjoutTable{
+    color: #e9f1f1;
+    font-size: 13.5px;
+}
+.formAjoutTable .head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.formAjoutTable form{
+    padding: 10px 20px;
+}
+.formAjoutTable form .rows{
+    margin-bottom: 11px;
+}
+.formAjoutTable form label{
+    display: block;
+}
+.formAjoutTable form input{
+    width: 220px;
+    outline: none;
+    border: 1px solid var(--gray) ;
+    background-color: rgb(75, 72, 72);
+    padding: 3px 10px;
+    color: white;
+    font-weight: 400;
+    border-radius:4px;
+}
+.formAjoutTable form button{
+    width: 100%;
+    padding: 5px 10px;
+    margin-bottom: 7px;
+}
+    
